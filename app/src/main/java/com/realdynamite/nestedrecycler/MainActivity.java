@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         sectionOneItems.add("Asset Editor");
         sectionOneItems.add("Asset Loading Insights");
         sectionOneItems.add("Asset Management");
+        List<String> sectionOneItems1 = new ArrayList<>();
+        List<String>sectionOneItems2 = new ArrayList<>();
 
         String sectionTwoName = "C";
         List<String> sectionTwoItems = new ArrayList<>();
@@ -47,12 +49,14 @@ public class MainActivity extends AppCompatActivity {
         sectionTwoItems.add("Content Browser");
         sectionTwoItems.add("Curve Editor");
         sectionTwoItems.add("Curve Editor Tools");
+        List<String>sectionTwoItems1 = new ArrayList<>();
+        List<String> sectionTwoItems2 = new ArrayList<>();
 
         //how should I stracture my code so as to enable me to enter all the values in the UI
 
 
-        sectionList.add(new Section(sectionOneName, sectionOneItems));
-        sectionList.add(new Section(sectionTwoName, sectionTwoItems));
+        sectionList.add(new Section(sectionOneName, sectionOneItems,sectionOneItems1,sectionOneItems2));
+        sectionList.add(new Section(sectionTwoName, sectionTwoItems,sectionTwoItems1,sectionTwoItems2));
 
 
         Log.d(TAG, "initData: " + sectionList);
